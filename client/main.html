@@ -1,0 +1,33 @@
+<head>
+  <title>twiddle</title>
+</head>
+
+<body>
+	{{>html}}
+</body>
+
+<template name="html">
+	{{>template}}
+	{{>editor}}
+</template>
+
+
+<template name="template">
+	<style>
+		{{styles}}
+	</style>
+	<div id="template">
+		{{{markup}}}
+	</div>
+</template>
+
+<template name="editor">
+	<div id="editor">
+		editor
+		<div contentEditable="true" placeholder="click to edit html" id="editHTML"></div>
+		<div contentEditable="true" placeholder="click to edit css" id="editCSS"></div>
+	</div>
+</template>
+
+<template name="js"></template>
+

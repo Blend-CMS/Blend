@@ -1,0 +1,32 @@
+/* CSS declarations go here */
+
+
+body{
+	background:lightgreen;
+}
+
+#editor{
+	width:100vw;
+	bottom:0;
+	position:fixed;
+	height: 50vh;
+	background: #ddd;
+}
+
+#editCSS, #editHTML{
+	border: 1px solid black;
+	width: 46vw;
+	height: 100%;
+	float: left;
+	background: white;
+}
+
+#editCSS{
+	float:right;
+}
+
+[contenteditable=true]:empty:before{
+	content: attr(placeholder);
+	display:block;
+	color: #ccc;
+}
