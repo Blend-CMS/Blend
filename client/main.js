@@ -3,6 +3,31 @@ import { ReactiveVar } from 'meteor/reactive-var';
 import TEMP from '../imports/temp.js'
 import './main.html';
 
+import { Meteor } from 'meteor/meteor';
+import React from 'react';
+import { render } from 'react-dom';
+import HelloWorld from './HelloWorld.js';
+
+Meteor.startup(() => {
+  //render(<App />, document.getElementById('app'));
+ //render(<App></App>,document.getElementById('example'));
+  
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Session.set('markup', TEMP.findOne({}));
 
 
